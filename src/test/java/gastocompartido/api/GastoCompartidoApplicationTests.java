@@ -1,13 +1,7 @@
 package gastocompartido.api;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GastoCompartidoApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+public class GastoCompartidoApplicationTests {
 }

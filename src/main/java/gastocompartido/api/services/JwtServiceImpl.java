@@ -44,7 +44,7 @@ public class JwtServiceImpl implements JwtService {
                 .getBody();
     }
 
-    public <T> T getClaim(String token, Function<Claims, T> claimsResolver) {
+    private <T> T getClaim(String token, Function<Claims, T> claimsResolver) {
         Claims claims = getAllClaims(token);
         return claimsResolver.apply(claims);
     }
