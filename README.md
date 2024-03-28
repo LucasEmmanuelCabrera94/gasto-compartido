@@ -13,6 +13,10 @@ Este repositorio aloja una API diseñada con el propósito principal de servir c
 
 Este proyecto es el resultado de mi pasión por la programación y mi compromiso personal con la mejora continua. Estoy emocionado de compartir este viaje de aprendizaje y desarrollo con la comunidad de desarrolladores backend.
 
+## Creación de gastos a través de Swagger
+
+Estoy en proceso de mejorar la experiencia de usuario mediante la implementación de Swagger. Con Swagger, tendrás acceso a una documentación clara y detallada que te guiará a través de cada paso del proceso de creación de gastos.
+
 
 ## Funcionalidades de Spring Security:
 
@@ -33,3 +37,27 @@ En caso de que ocurra un error, se devolverá un mensaje de error correspondient
 ![img_3.png](images/img_3.png)
 
 Estas funcionalidades garantizan un acceso seguro a la aplicación y proporcionan una experiencia de usuario fluida.
+
+## Crea tu primer Gasto:
+
+Una vez que te hayas logeado y obtenido tu Token de acceso, puedes proceder a crear tu primer gasto siguiendo estos sencillos pasos:
+1- Inicio de sesión: Ingresa tus credenciales para iniciar sesión en la plataforma y obtener el Token de acceso necesario para realizar operaciones.
+
+<img width="850" alt="image" src="https://github.com/LucasEmmanuelCabrera94/gasto-compartido/assets/147777941/f1b71729-97ed-4785-a464-2eca974d5bb7">
+
+2- Acceso al endpoint: Dirígete al endpoint correspondiente para crear el gasto e ingresa el Bearer Token que has obtenido durante el inicio de sesión.
+
+<img width="893" alt="image" src="https://github.com/LucasEmmanuelCabrera94/gasto-compartido/assets/147777941/33403259-7a13-454f-9e11-ae132652ff9e">
+
+3- Creación del gasto: Completa el cuerpo de la solicitud con la información necesaria, como el monto del gasto, la descripción y cualquier otro detalle relevante.
+
+<img width="893" alt="image" src="https://github.com/LucasEmmanuelCabrera94/gasto-compartido/assets/147777941/e9c13301-a9cc-40bc-8464-e86425fd01ae">
+
+¡Felicidades! ¡Has creado tu primer gasto con éxito! Este proceso te permite registrar de manera eficiente tus gastos dentro de la plataforma. Si necesitas más ayuda o tienes alguna pregunta, no dudes en contactarme.
+
+
+
+
+
+
+
