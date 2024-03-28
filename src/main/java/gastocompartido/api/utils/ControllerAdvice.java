@@ -1,7 +1,8 @@
 package gastocompartido.api.utils;
 
 import gastocompartido.api.dto.ErrorDTO;
-import gastocompartido.api.exceptions.BusinessException;
+import gastocompartido.api.exceptions.BadRequestException;
+import gastocompartido.api.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -27,9 +28,15 @@ public class ControllerAdvice {
      * @param  ex   the BusinessException to handle
      * @return      the ResponseEntity containing the ErrorDTO and HttpStatus.BAD_REQUEST
      */
-    @ExceptionHandler(value = BusinessException.class)
-    public ResponseEntity<ErrorDTO> businessExceptionHandler(BusinessException ex) {
+    @ExceptionHandler(value = BadRequestException.class)
+    public ResponseEntity<ErrorDTO> badRequestExceptionHandler(BadRequestException ex) {
         ErrorDTO error = ErrorDTO.builder().code("400").message(ex.getMessage()).build();
         return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(value = NotFoundException.class)
+    public ResponseEntity<ErrorDTO> entityNotFoundExceptionHandler(NotFoundException ex) {
+        ErrorDTO error = ErrorDTO.builder().code("404").message(ex.getMessage()).build();
+        return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
 }

@@ -1,9 +1,8 @@
 package gastocompartido.api.controllers;
 
-import gastocompartido.api.entities.Auth.AuthResponse;
-import gastocompartido.api.entities.Auth.LoginRequest;
-import gastocompartido.api.entities.Auth.RegisterRequest;
-import gastocompartido.api.entities.User;
+import gastocompartido.api.entities.auth.AuthResponse;
+import gastocompartido.api.entities.auth.LoginRequest;
+import gastocompartido.api.entities.auth.RegisterRequest;
 import gastocompartido.api.services.interfaces.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
     @Autowired
     private AuthService authService;
-
 
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> registerUser(@RequestBody RegisterRequest user) {

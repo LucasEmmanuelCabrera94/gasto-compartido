@@ -1,9 +1,8 @@
 package gastocompartido.api.services.interfaces;
 
-import gastocompartido.api.entities.Auth.AuthResponse;
-import gastocompartido.api.entities.Auth.LoginRequest;
-import gastocompartido.api.entities.Auth.RegisterRequest;
-import gastocompartido.api.entities.User;
+import gastocompartido.api.entities.auth.AuthResponse;
+import gastocompartido.api.entities.auth.LoginRequest;
+import gastocompartido.api.entities.auth.RegisterRequest;
 
 public interface AuthService {
 

@@ -15,6 +15,7 @@ public class UserController {
      */
     @GetMapping("/login")
     public String loginUser() {
+
         return "Hello world!";
     }
 }

@@ -1,4 +1,4 @@
-package gastocompartido.api.entities;
+package gastocompartido.api.entities.expense;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

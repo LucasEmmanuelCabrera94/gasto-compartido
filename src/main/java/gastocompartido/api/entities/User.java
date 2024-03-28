@@ -1,10 +1,12 @@
 package gastocompartido.api.entities;
 
+import gastocompartido.api.entities.expense.Expense;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
@@ -46,6 +48,9 @@ public class User implements UserDetails {
     private String updated_at;
     private String country;
     private Role role;
+
+    @ManyToMany(mappedBy = "users")
+    private List<Expense> expenses;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

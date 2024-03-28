@@ -1,18 +1,16 @@
 package gastocompartido.api.services;
 
-import gastocompartido.api.entities.Auth.AuthResponse;
-import gastocompartido.api.entities.Auth.LoginRequest;
-import gastocompartido.api.entities.Auth.RegisterRequest;
+import gastocompartido.api.entities.auth.AuthResponse;
+import gastocompartido.api.entities.auth.LoginRequest;
+import gastocompartido.api.entities.auth.RegisterRequest;
 import gastocompartido.api.entities.Role;
 import gastocompartido.api.entities.User;
 import gastocompartido.api.repositories.UserRepository;
 import gastocompartido.api.services.interfaces.AuthService;
 import gastocompartido.api.services.interfaces.JwtService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

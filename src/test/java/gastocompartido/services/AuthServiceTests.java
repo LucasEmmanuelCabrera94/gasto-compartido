@@ -1,8 +1,8 @@
 package gastocompartido.services;
 
-import gastocompartido.api.entities.Auth.AuthResponse;
-import gastocompartido.api.entities.Auth.LoginRequest;
-import gastocompartido.api.entities.Auth.RegisterRequest;
+import gastocompartido.api.entities.auth.AuthResponse;
+import gastocompartido.api.entities.auth.LoginRequest;
+import gastocompartido.api.entities.auth.RegisterRequest;
 import gastocompartido.api.entities.User;
 import gastocompartido.api.repositories.UserRepository;
 import gastocompartido.api.services.AuthServiceImpl;

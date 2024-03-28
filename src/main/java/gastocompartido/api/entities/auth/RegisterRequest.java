@@ -1,4 +1,4 @@
-package gastocompartido.api.entities.Auth;
+package gastocompartido.api.entities.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

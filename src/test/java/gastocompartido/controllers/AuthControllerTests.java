@@ -1,9 +1,9 @@
 package gastocompartido.controllers;
 
 import gastocompartido.api.controllers.AuthController;
-import gastocompartido.api.entities.Auth.AuthResponse;
-import gastocompartido.api.entities.Auth.LoginRequest;
-import gastocompartido.api.entities.Auth.RegisterRequest;
+import gastocompartido.api.entities.auth.AuthResponse;
+import gastocompartido.api.entities.auth.LoginRequest;
+import gastocompartido.api.entities.auth.RegisterRequest;
 import gastocompartido.api.services.interfaces.AuthService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
