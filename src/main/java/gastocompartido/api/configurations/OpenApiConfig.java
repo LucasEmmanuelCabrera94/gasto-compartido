@@ -10,7 +10,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 
 @OpenAPIDefinition(
         info = @Info(
-                contact = @Contact(name = "Lucas Emmanuel", email = "cabreraemmanuellucas@hotmail.com"),
+                contact = @Contact(name = "email", email = "cabreraemmanuellucas@hotmail.com"),
                 title = "Gasto Compartido",
                 description = "Es una aplicacion para gestionar gastos." +
                     "  <b>Git</b>: https://github.com/LucasEmmanuelCabrera94" +
