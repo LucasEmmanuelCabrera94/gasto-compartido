@@ -28,6 +28,7 @@ Para acceder a Swagger, simplemente sigue estos pasos:
 ### Consejos sobre uso de Swagger:
  - Notar que la aplicacion corre junto una base de datos donde se pueden crear usuarios, por esto mismo primero tiene que crear un usuario para poder obtener un <b>Token</b> para poder usar los demas endpoints.
  - Este dicho Token va a poder usarlo en el apartado de "Authorize" para poder usar libremente la api.
+ - En application.properties, dejé una propertie para que se abra automaticamente el swagger (yo lo uso en safari, a veces tenes que refrescar cuando se abre).
 
 Listo, Ahora estarás listo para explorar y probar los diferentes endpoints de nuestra aplicación utilizando la interfaz intuitiva proporcionada por Swagger.
 
