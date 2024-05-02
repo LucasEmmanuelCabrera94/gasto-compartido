@@ -23,7 +23,6 @@ Para acceder a Swagger, simplemente sigue estos pasos:
 * Abre tu navegador web favorito.
 * Navega a la siguiente URL: http://localhost:8080/swagger-ui/index.html#
 
-![img.png](img.png)
 
 Listo, Ahora estarás listo para explorar y probar los diferentes endpoints de nuestra aplicación utilizando la interfaz intuitiva proporcionada por Swagger.
 
