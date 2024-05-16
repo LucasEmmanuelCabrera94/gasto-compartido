@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  gastos-compartido_db:
+    container_name: gastos-compartido_db
+    image: mysql:latest
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD:Atila4Ever
+      - MYSQL_DATABASE:gastocompartido_db
+      - MYSQL_USER:root2
+      - MYSQL_PASSWORD:Atila4Ever
+
+  gastos-compartido_app:
+    depends_on:
+      - gastos-compartido_db
+    container_name: gastos-compartido_app
+    image: gc-gastos-compartido_app:1.0.0
+    build: .
+    ports:
+      - 8080:8888
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3307/gastocompartido_db
+#      SPRING_DATASOURCE_USERNAME: root2
+#      SPRING_DATASOURCE_PASSWORD: Atila4Ever

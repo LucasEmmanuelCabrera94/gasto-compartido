@@ -25,7 +25,7 @@ public class AuthController {
 
     @Operation(
             description = "Puede registrar un nuevo usuario para usar la api.",
-            summary = "Crea <b>AQUI</b> un usuario para poder tener token y usar la api.",
+            summary = "Crea AQUI un usuario para poder tener token y usar la api.",
             responses = {
                     @ApiResponse(responseCode = "200", description = "Success"),
             }

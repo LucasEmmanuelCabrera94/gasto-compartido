@@ -11,6 +11,7 @@ import gastocompartido.api.repositories.ExpenseRepository;
 import gastocompartido.api.repositories.UserRepository;
 import gastocompartido.api.services.interfaces.ExpenseService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +23,13 @@ import java.util.Optional;
 import static gastocompartido.api.utils.UsefulMethods.getUserLogged;
 
 @Service
-@RequiredArgsConstructor
 public class ExpenseServiceImpl implements ExpenseService {
-    private final ExpenseRepository expenseRepository;
-    private final UserRepository userRepository;
-    private final CategoryRepository categoryRepository;
+    @Autowired
+    private ExpenseRepository expenseRepository;
+    @Autowired
+    private UserRepository userRepository;
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @Override
     public ExpenseResponse createExpense(ExpenseRequest request) {
